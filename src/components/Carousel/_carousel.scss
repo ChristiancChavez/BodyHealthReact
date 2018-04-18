@@ -1,0 +1,52 @@
+.carousel {
+    position: relative;
+    text-align: center;
+    &__image {
+        width: 500px;
+        height: 600px;
+        padding-right: 50px;
+        position: relative;
+    }
+    &__button {
+        position: absolute; 
+        transform: translateY(-50%);
+        border-radius: 50%;
+        border: none;
+        top: 50%;
+        background-color: grey;
+        color: white;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        font-size: 30px;
+        &--left {
+            left: 20px;
+        }
+        &--right {
+            right: 20px;
+        }
+    }
+    
+}
+
+.dots {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translateX(-50%);
+    &__bts {
+        border-radius: 50%;
+        background-color: grey;
+        border: solid black 3px;
+        cursor: pointer;
+        width: 10px;
+        height: 10px;
+        &--left {
+            margin-right: 20px;
+        }
+        &--right {
+            margin-left: 20px;
+        }
+    }
+}

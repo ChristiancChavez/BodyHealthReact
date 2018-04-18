@@ -1,0 +1,8 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.logo {
+  width: 200px;
+  height: 100px; }
