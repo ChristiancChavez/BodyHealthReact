@@ -21,10 +21,10 @@ class App extends Component {
         <ModalPpal />
         <Video />
         <Services />
-       <img src={WhiteLogo}/>
-       <Benefits />
-       <Carousel  images={[WhiteLogo, womenProfile, menProfile]}/>
-       <Footer />
+        <img className="PpalLogo"src={WhiteLogo}/>
+        <Benefits />
+        <Carousel  images={[WhiteLogo, womenProfile, menProfile]}/>
+        <Footer />
       </div>
     );
   }

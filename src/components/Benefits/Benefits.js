@@ -8,26 +8,44 @@ import resultsIcon from '../../Assets/images/resultsIcon.png';
 class Benefits extends Component {
     render() {
         return (
-            <div className="benefits">
-                <div className="benefits_guide">
-                    <span className="benefits_guide-icon"> Guia profesional a Domicilio</span>
-                    <img src={guideIcon}/>
+            <div>  
+                <div className="benefits">
+                    <div className="benefits__program">
+                        <span className="benefits__program__title">Guia Profesional a Domicilio</span>
+                    </div>
+                    <div className="benefits__program">
+                        <span className="benefits__program__title">Seguimiento con Tecnología cada Entrenamiento</span> 
+                    </div>
+                    <div className="benefits__program">
+                        <span className="benefits__program__title">Tamizaje y Valoraciones periodicas</span> 
+                    </div>
+                    <div className="benefits__program">
+                        <span className="benefits__program__title">Visualización y Análisis de Resultados</span> 
+                    </div>
                 </div>
-                <div className="benefits_tracing">
-                    <span className="benefits_tracing-icon"> Seguimiento con tecnología cada entrenamiento</span>
-                    <img src={tracingIcon}/>
+                <div className="benefits">
+                    <div className="benefits__program">
+                        <img className="benefits__program__image--padding" src={guideIcon}/>   
+                    </div>
+                    <div className="benefits__program">
+                        <img className="benefits__program__image--padding" src={tracingIcon}/>
+                    </div>
+                    <div className="benefits__program">
+                        <img className="benefits__program__image--small benefits__program__image--position" src={assesstmentIcon}/>   
+                    </div>
+                    <div className="benefits__program">
+                        <img className="benefits__program__image--small" src={resultsIcon}/>
+                    </div>
                 </div>
-                <div className="benefits_assesstments">
-                    <span className="benefits_assesstments-icon"> Tamizajes y valoraciones físicas periódicas</span>
-                    <img src={assesstmentIcon}/>
-                </div>
-                <div className="benefits_results">
-                    <span className="benefits_results-icon"> Visualización y análisis de resultados</span>
-                    <img src={resultsIcon}/>
-                </div>
-            </div>
+            </div>    
         );
     }
 }
 
 export default Benefits;
+
+
+
+
+
+

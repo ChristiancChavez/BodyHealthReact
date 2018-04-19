@@ -5,39 +5,48 @@
 .header {
   display: flex;
   align-items: center;
-  margin-top: 30px;
-  margin-bottom: 30px; }
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px; }
   .header__title {
-    justify-content: space-around;
     color: orangered;
-    font-size: 35px;
-    padding: 5px;
+    font-size: 40px;
     width: 25%;
     text-align: center;
     font-weight: bold;
-    text-shadow: 2px 2px 5px black, 2px 2px 5px black; }
+    text-shadow: 2px 2px 5px black, 2px 2px 5px black;
+    margin-bottom: 10px; }
     .header__title-logo {
       width: 1000px;
-      height: 200px; }
+      height: 200px;
+      margin: 15px; }
 
 .users {
   display: flex;
   flex-flow: nowrap row;
-  justify-content: flex-end; }
+  justify-content: center; }
   .users__login {
-    align-self: flex-end;
-    border-bottom-left-radius: 12px;
-    border-top-left-radius: 12px;
-    border-color: black;
-    background: linear-gradient(to bottom, #ff3300 0%, #ffcc00 100%);
-    padding-bottom: 5px; }
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-around;
+    border-radius: 12px;
+    border: 3px solid black;
+    background: linear-gradient(to bottom, gray 0%, #252525fa 100%);
+    margin-bottom: 20px;
+    margin-right: 90px;
+    width: 300px;
+    max-height: 146px;
+    max-width: 300px; }
+    .users__login:hover {
+      background: linear-gradient(to bottom, #ff3300 0%, #ffcc00 100%);
+      border: 5px solid black; }
     .users__login-icon {
-      width: 30%;
-      height: 50%;
+      width: 50%;
+      height: 70%;
       align-self: center; }
     .users__login-title {
-      font-size: 20px;
-      color: white;
+      font-size: 30px;
+      color: black;
       font-weight: bold;
       text-align: center;
       align-content: center; }
@@ -72,7 +81,8 @@
     font-size: 30px;
     text-align: center;
     text-decoration: black;
-    padding: 15px; }
+    padding: 15px;
+    font-weight: bolder; }
   .modal .container {
     display: flex;
     justify-content: center;
@@ -87,7 +97,7 @@
   .video__video {
     position: absolute;
     left: 50%;
-    top: 43%;
+    top: 40%;
     transform: translate(-50%);
     background: rgba(0, 0, 0, 0.5);
     border-radius: 2%;
@@ -148,11 +158,11 @@
   background-color: black;
   height: auto; }
   .services__title {
-    font-size: 50px;
+    font-size: 60px;
     color: white;
     text-align: center;
     padding: 15px;
-    padding-top: 40px;
+    padding-top: 60px;
     text-shadow: 2px 2px 5px orangered, 2px 2px 5px #ffcc00;
     font-weight: bold;
     margin-top: 0px; }
@@ -164,30 +174,38 @@
       background: linear-gradient(to bottom, #ff3300 0%, #ffcc00 100%);
       padding: 15px;
       border-radius: 12px;
-      border: lightgrey solid 5px;
+      border: lightgrey solid 3px;
       margin-right: 30px;
       margin-bottom: 40px;
       font-size: 30px;
       font-weight: bolder; }
+      .services__button--bts:hover {
+        background: orange; }
 
 .service {
   display: flex;
   flex-flow: wrap row;
   align-items: center;
-  padding: 10px;
-  justify-content: center; }
+  padding-bottom: 10px;
+  justify-content: space-around; }
   .service__program {
-    border-radius: 5%;
-    border: lightgrey solid 3px;
-    width: 400px;
-    height: 300px;
-    margin: 10px;
+    max-width: 406px;
+    max-height: 311px;
+    padding: 15px;
     display: inline-block;
     text-align: center;
     position: relative;
+    margin-bottom: 30px;
     filter: grayscale(100%); }
     .service__program:hover {
       filter: grayscale(0%); }
+    .service__program--image {
+      border-radius: 5%;
+      border: lightgrey solid 3px;
+      width: 400px;
+      height: 300px; }
+      .service__program--image:hover {
+        border: orange solid 5px; }
     .service__program--title {
       font-size: 40px;
       color: orangered;
@@ -197,4 +215,39 @@
       position: absolute;
       top: 50%;
       right: 50%;
-      transform: translate(50% -27%); }
+      transform: translate(50%, -50%);
+      transition: text-shadow 1s; }
+      .service__program--title:hover {
+        text-shadow: 3px 3px 6px orange, 3px 3px 6px orange; }
+
+.PpalLogo {
+  padding-top: 30px;
+  padding-left: 160px; }
+
+.benefits {
+  background-color: black;
+  height: auto;
+  display: flex;
+  flex-flow: nowrap row;
+  align-items: center;
+  padding-bottom: 10px;
+  justify-content: space-around; }
+  .benefits__program {
+    display: flex;
+    margin: 15px 8px 0px 8px;
+    justify-content: space-between; }
+    .benefits__program__image--position {
+      padding-right: 70px; }
+    .benefits__program__image--small {
+      height: 200px;
+      margin-right: 50px; }
+    .benefits__program__image--padding {
+      padding-right: 60px;
+      margin-right: 30px;
+      height: 250px; }
+    .benefits__program__title {
+      font-size: 40px;
+      color: orangered;
+      text-shadow: 2px 2px 5px black, 2px 2px 5px black;
+      text-align: center;
+      font-weight: bolder; }

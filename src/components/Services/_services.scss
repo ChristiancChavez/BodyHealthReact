@@ -2,11 +2,11 @@
     background-color:  black;
     height: auto;
     &__title {
-        font-size: 50px;
+        font-size: 60px;
         color: white;
         text-align: center;
         padding: 15px;
-        padding-top: 40px;
+        padding-top: 60px;
         text-shadow: 2px 2px 5px orangered, 2px 2px 5px #ffcc00;
         font-weight: bold;
         margin-top: 0px;
@@ -19,12 +19,14 @@
         background: linear-gradient(to bottom, #ff3300 0%, #ffcc00 100%);
         padding: 15px;
         border-radius: 12px;
-        border: lightgrey solid 5px;
+        border: lightgrey solid 3px;
         margin-right: 30px;
         margin-bottom: 40px;
         font-size: 30px;
         font-weight: bolder;
-        
+        &:hover {
+            background: orange;
+        }
         }
     }
 }
@@ -33,25 +35,29 @@
     display: flex;
     flex-flow: wrap row;
     align-items: center;
-    padding: 10px;
-    justify-content: center;
+    padding-bottom: 10px;
+    justify-content: space-around;
     &__program {
-        border-radius: 5%;
-        border: lightgrey solid 3px;
-        width: 400px;
-        height: 300px;
-        margin: 10px;
+        max-width: 406px;
+        max-height: 311px;
+        padding: 15px;
         display: inline-block;
         text-align: center;
         position: relative;
+        margin-bottom: 30px;
         filter: grayscale(100%);
-        &:hover {
-            filter: grayscale(0%);
-        }
+            &:hover {
+                filter: grayscale(0%);
+            }
         &--image {
-
+            border-radius: 5%;
+            border: lightgrey solid 3px;
+            width: 400px;
+            height: 300px; 
+            &:hover {
+                border: orange solid 5px;
+            } 
         }
-
         &--title {
             font-size: 40px;
             color: orangered;
@@ -61,9 +67,11 @@
             position: absolute;
             top: 50%;
             right: 50%;
-            transform: translate(50% -27%);
+            transform: translate(50%, -50%);
+            transition: text-shadow 1s;
+            &:hover {
+                text-shadow:3px 3px 6px orange, 3px 3px 6px orange; 
+            }
         }
-    }
-        
-    
+    }   
 }

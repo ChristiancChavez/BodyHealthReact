@@ -9,7 +9,7 @@ class Services extends Component {
     render(){
         return (
             <div> 
-                <section className="services flex-container">
+                <div className="services">
                     <h3 className="services__title">Obten tus resultados con Profesionalismo</h3>
                     <div className="services__button">
                     <button type="button" className="services__button services__button--bts" ><a href=""></a>Obten tu Cortesia</button>
@@ -17,31 +17,31 @@ class Services extends Component {
                     </div>
                     <div className="service">
                         <div className="service__program">
-                            <span className="service__program--title">Personalizado</span>
                             <img className="service__program--image" src={Personalized}/>
+                            <span className="service__program--title">Personalizado</span>
                         </div>
                         <div className="service__program">
-                            <span className="service__program--title">Grupal</span>
-                            <img className="service__program--image" src={Group}/> 
+                            <img className="service__program--image" src={Group}/>
+                            <span className="service__program--title">Grupal</span> 
                         </div>
                         <div className="service__program">
-                            <span className="service__program--title">Empresa Felíz</span>
-                            <img className="service__program--image" src={Entrerprise}/> 
+                            <img className="service__program--image" src={Entrerprise}/>
+                            <span className="service__program--title">Empresa Felíz</span> 
                         </div>
                         <div className="service__program">
-                            <span className="service__program--title">Historias de Éxito</span>
                             <img className="service__program--image" src={Historys}/>
+                            <span className="service__program--title">Historias de Éxito</span>
                         </div>
                         <div className="service__program">
-                            <span className="service__program--title">Servicios Complementarios</span>
                             <img className="service__program--image" src={Nutrition}/>
+                            <span className="service__program--title">Servicios Complementarios</span>
                         </div>
                         <div className="service__program">
-                            <span className="service__program--title">Nuestros usuarios son felices y aquí lo demuestran</span>
                             <input className="service__program--image" />
+                            <span className="service__program--title">Nuestros usuarios son felices y aquí lo demuestran</span>
                         </div>
                     </div>
-                </section>      
+                </div>      
             </div>
         );
     }
