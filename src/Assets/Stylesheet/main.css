@@ -1,6 +1,7 @@
 .background {
   background-image: url("../../Assets/images/headerBackground.png");
-  text-align: center; }
+  text-align: center;
+  position: relative; }
 
 .header {
   display: flex;
@@ -14,8 +15,12 @@
     width: 25%;
     text-align: center;
     font-weight: bold;
-    text-shadow: 2px 2px 5px black, 2px 2px 5px black;
-    margin-bottom: 10px; }
+    text-shadow: 3px 3px 6px black;
+    margin-bottom: 10px;
+    text-decoration-line: none; }
+    .header__title:hover {
+      text-shadow: 6px 6px 9px black, 6px 6px 9px black;
+      cursor: pointer; }
     .header__title-logo {
       width: 1000px;
       height: 200px;
@@ -51,6 +56,66 @@
       text-align: center;
       align-content: center; }
 
+.togglePrograms {
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  text-align: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 250px;
+  bottom: 30px;
+  border-radius: 12px; }
+  .togglePrograms__options {
+    text-decoration-line: none;
+    color: black;
+    text-align: center;
+    font-size: 40px; }
+    .togglePrograms__options:hover {
+      background-color: rgba(177, 172, 172, 0.808);
+      cursor: pointer; }
+
+.hide {
+  display: none; }
+
+.toggleNews {
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  text-align: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 500px;
+  bottom: 90px;
+  border-radius: 12px; }
+  .toggleNews__options {
+    text-decoration-line: none;
+    color: black;
+    text-align: center;
+    font-size: 40px; }
+    .toggleNews__options:hover {
+      background-color: rgba(177, 172, 172, 0.808);
+      cursor: pointer; }
+
+.toggleOpinions {
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  text-align: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 800px;
+  bottom: 45px;
+  border-radius: 12px; }
+  .toggleOpinions__options {
+    text-decoration-line: none;
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    cursor: pointer; }
+    .toggleOpinions__options:hover {
+      background-color: rgba(177, 172, 172, 0.808); }
+
 .modal {
   background-image: url("../../Assets/images/modalPpal.jpg");
   background-repeat: no-repeat;
@@ -63,7 +128,8 @@
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding: 50px 0px; }
+    padding: 50px 0px;
+    text-shadow: 2px 2px 5px lightgrey, 2px 2px 5px lightgrey; }
   .modal__goal {
     border-radius: 12px;
     border-color: black;
@@ -83,6 +149,10 @@
     text-decoration: black;
     padding: 15px;
     font-weight: bolder; }
+    .modal__button:hover {
+      background: orange;
+      border: lightgrey solid 6px;
+      cursor: pointer; }
   .modal .container {
     display: flex;
     justify-content: center;
@@ -159,11 +229,11 @@
   height: auto; }
   .services__title {
     font-size: 60px;
-    color: white;
+    color: orangered;
     text-align: center;
     padding: 15px;
     padding-top: 60px;
-    text-shadow: 2px 2px 5px orangered, 2px 2px 5px #ffcc00;
+    text-shadow: 2px 2px 5px lightgrey, 2px 2px 5px lightgrey;
     font-weight: bold;
     margin-top: 0px; }
   .services__button {
@@ -171,16 +241,20 @@
     flex-flow: nowrap row;
     justify-content: center; }
     .services__button--bts {
-      background: linear-gradient(to bottom, #ff3300 0%, #ffcc00 100%);
+      background: linear-gradient(to bottom, gold 0%, orangered 50%);
       padding: 15px;
       border-radius: 12px;
       border: lightgrey solid 3px;
       margin-right: 30px;
       margin-bottom: 40px;
       font-size: 30px;
-      font-weight: bolder; }
+      font-weight: bolder;
+      max-width: 285px;
+      max-height: 106px; }
       .services__button--bts:hover {
-        background: orange; }
+        background: orange;
+        border: lightgrey solid 6px;
+        cursor: pointer; }
 
 .service {
   display: flex;
@@ -189,7 +263,7 @@
   padding-bottom: 10px;
   justify-content: space-around; }
   .service__program {
-    max-width: 406px;
+    max-width: 405px;
     max-height: 311px;
     padding: 15px;
     display: inline-block;
@@ -218,7 +292,8 @@
       transform: translate(50%, -50%);
       transition: text-shadow 1s; }
       .service__program--title:hover {
-        text-shadow: 3px 3px 6px orange, 3px 3px 6px orange; }
+        text-shadow: 3px 3px 6px orange, 3px 3px 6px orange;
+        cursor: pointer; }
 
 .PpalLogo {
   padding-top: 30px;
@@ -237,17 +312,125 @@
     margin: 15px 8px 0px 8px;
     justify-content: space-between; }
     .benefits__program__image--position {
-      padding-right: 70px; }
+      padding-right: 70px;
+      cursor: pointer; }
     .benefits__program__image--small {
       height: 200px;
-      margin-right: 50px; }
+      margin-right: 50px;
+      cursor: pointer; }
     .benefits__program__image--padding {
       padding-right: 60px;
       margin-right: 30px;
-      height: 250px; }
+      height: 250px;
+      cursor: pointer; }
     .benefits__program__title {
       font-size: 40px;
       color: orangered;
       text-shadow: 2px 2px 5px black, 2px 2px 5px black;
       text-align: center;
       font-weight: bolder; }
+      .benefits__program__title:hover {
+        text-shadow: 3px 3px 4px orange;
+        cursor: pointer; }
+
+.networks {
+  background-image: url("../../Assets/images/headerBackground.png");
+  display: flex;
+  justify-content: space-around; }
+  .networks .network {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; }
+    .networks .network__icon {
+      height: 80px;
+      filter: grayscale(100%);
+      padding: 20px;
+      margin-top: 80px; }
+      .networks .network__icon:hover {
+        filter: grayscale(0%);
+        cursor: pointer; }
+  .networks .chat {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+    .networks .chat__input {
+      width: 300px;
+      height: 150px;
+      text-align: center;
+      border-radius: 12px;
+      border: orangered solid 2px;
+      font-size: 20px; }
+  .networks .events {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .networks .events__icon {
+      height: 110px;
+      width: 110px;
+      align-self: center;
+      padding-top: 15px;
+      cursor: pointer; }
+    .networks .events__text {
+      font-size: 35px;
+      text-align: center;
+      font-weight: bold;
+      padding-top: 15px;
+      color: orangered; }
+      .networks .events__text:hover {
+        text-shadow: 3px 3px 4px orange; }
+
+.cortesy {
+  background-image: url("../../Assets/images/cortesy.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto; }
+  .cortesy__title {
+    color: orangered;
+    text-align: center;
+    text-shadow: 2px 2px 5px lightgrey, 2px 2px 5px lightgrey;
+    font-size: 60px;
+    padding: 30px 0 30px 0;
+    margin-top: 0px;
+    padding-top: 60px; }
+  .cortesy .form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-content: center;
+    margin-top: 15px; }
+    .cortesy .form__column {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-content: center; }
+      .cortesy .form__column__input {
+        font-size: 25px;
+        border-radius: 5px;
+        border: solid orangered 1px;
+        background-color: lightgray;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        width: 510px; }
+        .cortesy .form__column__input--big {
+          width: 1250px;
+          align-self: center; }
+  .cortesy .button {
+    display: flex;
+    justify-content: center; }
+    .cortesy .button__submit {
+      font-size: 30px;
+      padding: 15px;
+      background: linear-gradient(to bottom, gold 0%, orangered 50%);
+      border: lightgrey solid 3px;
+      font-weight: bolder;
+      border-radius: 12px;
+      margin-bottom: 60px;
+      margin-top: 40px;
+      max-height: 70px; }
+      .cortesy .button__submit:hover {
+        background: orange;
+        border: lightgrey solid 6px;
+        cursor: pointer; }

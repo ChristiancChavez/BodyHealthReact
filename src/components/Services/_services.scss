@@ -3,11 +3,11 @@
     height: auto;
     &__title {
         font-size: 60px;
-        color: white;
+        color: orangered;
         text-align: center;
         padding: 15px;
         padding-top: 60px;
-        text-shadow: 2px 2px 5px orangered, 2px 2px 5px #ffcc00;
+        text-shadow: 2px 2px 5px lightgrey, 2px 2px 5px lightgrey;
         font-weight: bold;
         margin-top: 0px;
     } 
@@ -16,7 +16,7 @@
         flex-flow: nowrap row;
         justify-content: center;
         &--bts {
-        background: linear-gradient(to bottom, #ff3300 0%, #ffcc00 100%);
+        background: linear-gradient(to bottom, gold 0%, orangered 50%);
         padding: 15px;
         border-radius: 12px;
         border: lightgrey solid 3px;
@@ -24,8 +24,12 @@
         margin-bottom: 40px;
         font-size: 30px;
         font-weight: bolder;
+        max-width: 285px;
+        max-height: 106px;
         &:hover {
             background: orange;
+            border: lightgrey solid 6px;
+            cursor: pointer;
         }
         }
     }
@@ -38,7 +42,7 @@
     padding-bottom: 10px;
     justify-content: space-around;
     &__program {
-        max-width: 406px;
+        max-width: 405px;
         max-height: 311px;
         padding: 15px;
         display: inline-block;
@@ -71,6 +75,7 @@
             transition: text-shadow 1s;
             &:hover {
                 text-shadow:3px 3px 6px orange, 3px 3px 6px orange; 
+                cursor: pointer;
             }
         }
     }   

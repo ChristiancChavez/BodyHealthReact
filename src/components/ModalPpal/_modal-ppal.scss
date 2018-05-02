@@ -11,6 +11,7 @@
         margin-top: 0px;
         margin-bottom: 0px;
         padding: 50px 0px;
+        text-shadow: 2px 2px 5px lightgrey, 2px 2px 5px lightgrey;
     }
     &__goal {
         border-radius: 12px;
@@ -32,6 +33,11 @@
         text-decoration: black;
         padding: 15px;
         font-weight: bolder;
+        &:hover {
+            background: orange;
+            border: lightgrey solid 6px;
+            cursor: pointer;
+        }
     }
 
 .container {

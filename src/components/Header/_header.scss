@@ -1,6 +1,7 @@
 .background {
     background-image: url("../../Assets/images/headerBackground.png");
     text-align: center;
+    position: relative;
 }
 .header {
     display:flex;
@@ -14,8 +15,13 @@
         width: 25%;
         text-align: center;
         font-weight: bold;
-        text-shadow: 2px 2px 5px black, 2px 2px 5px black ;
+        text-shadow: 3px 3px 6px black;
         margin-bottom: 10px;
+        text-decoration-line: none;
+        &:hover {
+            text-shadow: 6px 6px 9px black, 6px 6px 9px black ;
+            cursor: pointer;
+        }
         &-logo {
             width: 1000px;
             height: 200px;
@@ -56,4 +62,76 @@
             align-content: center;
         }
     }
-} 
+}
+
+.togglePrograms {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    text-align: center;
+    justify-content: flex-start;
+    position: absolute;
+    left: 250px;
+    bottom: 30px;
+    border-radius: 12px;
+    &__options {
+        text-decoration-line: none;
+        color: black;
+        text-align: center;
+        font-size: 40px;
+        &:hover {
+            background-color: rgba(177, 172, 172, 0.808);
+            cursor: pointer;
+        }
+    }
+    
+}
+.hide {
+    display: none;
+}
+
+.toggleNews {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    text-align: center;
+    justify-content: flex-start;
+    position: absolute;
+    left: 500px;
+    bottom: 90px;
+    border-radius: 12px;
+    &__options {
+        text-decoration-line: none;
+        color: black;
+        text-align: center;
+        font-size: 40px;
+        &:hover {
+            background-color: rgba(177, 172, 172, 0.808);
+            cursor: pointer;
+        }
+    }
+    
+}
+.toggleOpinions {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    text-align: center;
+    justify-content: flex-start;
+    position: absolute;
+    left: 800px;
+    bottom: 45px;
+    border-radius: 12px;
+    &__options {
+        text-decoration-line: none;
+        color: black;
+        text-align: center;
+        font-size: 40px;
+        cursor: pointer;
+        &:hover {
+            background-color: rgba(177, 172, 172, 0.808);
+            
+        }
+    }
+    
+}

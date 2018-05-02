@@ -10,7 +10,7 @@ import Carousel from '../Carousel/Carousel';
 import WhiteLogo from '../../Assets/images/whiteLogo.jpg';
 import womenProfile from '../../Assets/images/womenProfile.jpg';
 import menProfile from '../../Assets/images/menProfile.jpg';
-
+import Cortesy from '../Cortesy/Cortesy';
 
 
 class App extends Component {
@@ -21,6 +21,7 @@ class App extends Component {
         <ModalPpal />
         <Video />
         <Services />
+        <Cortesy />
         <img className="PpalLogo"src={WhiteLogo}/>
         <Benefits />
         <Carousel  images={[WhiteLogo, womenProfile, menProfile]}/>
