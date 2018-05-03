@@ -11,6 +11,7 @@ import WhiteLogo from '../../Assets/images/whiteLogo.jpg';
 import womenProfile from '../../Assets/images/womenProfile.jpg';
 import menProfile from '../../Assets/images/menProfile.jpg';
 import Cortesy from '../Cortesy/Cortesy';
+import Quotation from '../Quotation/Quotation';
 
 
 class App extends Component {
@@ -22,6 +23,7 @@ class App extends Component {
         <Video />
         <Services />
         <Cortesy />
+        <Quotation />
         <img className="PpalLogo"src={WhiteLogo}/>
         <Benefits />
         <Carousel  images={[WhiteLogo, womenProfile, menProfile]}/>

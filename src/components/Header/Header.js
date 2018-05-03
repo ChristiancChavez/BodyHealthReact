@@ -8,11 +8,11 @@ class Header extends Component {
         this.state = { 
             programSubMenuOpen: false,
             newsSubMenuOpen: false,
-            opinionsSubMenuOpen: false,
+            aboutUsSubMenuOpen: false,
         };
         this.hideShowPrograms = this.hideShowPrograms.bind(this);
         this.hideShowNews = this.hideShowNews.bind(this);
-        this.hideShowOpinions = this.hideShowOpinions.bind(this);
+        this.hideShowAboutUs = this.hideShowAboutUs.bind(this);
     }
         
     hideShowPrograms() {
@@ -29,10 +29,10 @@ class Header extends Component {
         })
     }
 
-    hideShowOpinions() {
-        const { opinionsSubMenuOpen } =  this.state;
+    hideShowAboutUs() {
+        const { aboutUsSubMenuOpen } =  this.state;
         this.setState({
-            opinionsSubMenuOpen: !opinionsSubMenuOpen
+            aboutUsSubMenuOpen: !aboutUsSubMenuOpen
         })
     }
 
@@ -43,14 +43,19 @@ class Header extends Component {
                 <div className="background">
                     <img className="header__title-logo" src={logo}/>
                     <div className="header">
-                        <a href="" id="headerTitle" className="header__title">¿Porque somos la mejor opción?</a>
+                        <a href="" className="header__title">¿Porque somos la mejor opción?</a>
                         <span onClick={this.hideShowPrograms} className="header__title">Programas Body Health</span>
                         <span onClick={this.hideShowNews} className="header__title">Novedades</span>
-                        <span onClick={this.hideShowOpinions} className="header__title">Opiniones</span>
-                        <a href="" className="header__title">Talénto humano</a>
+                        <span onClick={this.hideShowAboutUs} className="header__title">Sobre Nosotros</span>
                         <a href="" className="header__title">Historias de Éxito</a>
+                        <div className="users flex-container">
+                        <button type="button" className="users__login">
+                            <img className="users__login-icon"src={logoIcon}/>
+                            <span className="users__login-title">MI RENDIMIENTO</span>
+                        </button>
                     </div>
-                    {this.state.programSubMenuOpen && <div className="togglePrograms ">
+                    </div>
+                    {this.state.programSubMenuOpen && <div className="togglePrograms">
                         <a href=""className="togglePrograms__options" >Grupal</a>
                         <a href=""className="togglePrograms__options" >Personalizado</a>
                         <a href=""className="togglePrograms__options" >Empresarial</a>
@@ -61,18 +66,16 @@ class Header extends Component {
                         <a href=""className="toggleNews__options" >Post Informativos</a>
                         <a href=""className="toggleNews__options" >Eventos Fitness-Wellness</a>
                     </div>}
-                    {this.state.opinionsSubMenuOpen && <div className="toggleOpinions">
-                        <a href=""className="toggleOpinions__options" >Grupal</a>
-                        <a href=""className="toggleOpinions__options" >Personalizado</a>
-                        <a href=""className="toggleOpinions__options" >Empresarial</a>
-                        <a href=""className="toggleOpinions__options" >Servicios Adicionales</a>
+                    {this.state.aboutUsSubMenuOpen && <div className="toggleAboutUs">
+                        <a href=""className="toggleAboutUs__options" >Opiniones</a>
+                        <a href=""className="toggleAboutUs__options" >Talento Humano</a>
                     </div>}
-                    <div className="users flex-container">
+                    {/* <div className="users flex-container">
                         <button type="button" className="users__login">
                             <img className="users__login-icon"src={logoIcon}/>
                             <span className="users__login-title">MI RENDIMIENTO</span>
                         </button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         );

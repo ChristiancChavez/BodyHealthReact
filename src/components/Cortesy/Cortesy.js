@@ -12,7 +12,7 @@ class Cortesy extends Component {
                         <div className="form__column">
                             <input className="form__column__input" type="text" placeholder="NOMBRES" />
                             <input className="form__column__input" type="text" placeholder="BARRIO" />
-                            <input className="form__column__input" type ="number" min="1" max="10" placeholder="CELULAR" />
+                            <input className="form__column__input" type ="number" placeholder="CELULAR" />
                             <input className="form__column__input" type="number"  min="1" max="70" placeholder="EDAD" />
                             <input className="form__column__input" type="text" placeholder="SERVICIO DESEADO" />
                             <input className="form__column__input" type="date" placeholder="DIA DE LA CORTESIA" />
