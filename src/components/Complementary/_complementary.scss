@@ -1,0 +1,56 @@
+.complementary {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    background-color: black;
+    &__title {
+        font-size: 50px;
+        font-weight: bolder;
+        color: orangered;
+        text-align: center;
+        text-shadow: 2px 2px 5px lightgrey, 2px 2px 5px lightgrey;
+        padding: 70px 0px 70px 0px;
+    }
+    &__nutrition {
+        background-image: url("../../Assets/images/nutrition.jpg");
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size:  cover;
+        position: relative;
+    }
+    &__fisioterapy {
+        background-image: url("../../Assets/images/fisioterapy.jpg");
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size:  cover;
+        position: relative;
+    }
+    &__massage {
+        background-image: url("../../Assets/images/massage.jpg");
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size:  cover;
+        position: relative;
+    }
+    &__valuations {
+        background-image: url("../../Assets/images/valuations.jpg");
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size:  cover;
+        position: relative;
+    }
+    &__subtitle {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%);
+        font-size: 60px;
+        font-weight: bolder;
+        color: black;
+        text-shadow:3px 3px 8px orangered, 3px 3px 8px orangered;
+        background: rgba(0, 0, 0, 0.5); 
+        border-radius: 2%; 
+        padding: 15px;
+        cursor: pointer;       
+    }
+}

@@ -70,12 +70,6 @@ class Header extends Component {
                         <a href=""className="toggleAboutUs__options" >Opiniones</a>
                         <a href=""className="toggleAboutUs__options" >Talento Humano</a>
                     </div>}
-                    {/* <div className="users flex-container">
-                        <button type="button" className="users__login">
-                            <img className="users__login-icon"src={logoIcon}/>
-                            <span className="users__login-title">MI RENDIMIENTO</span>
-                        </button>
-                    </div> */}
                 </div>
             </div>
         );

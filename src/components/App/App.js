@@ -6,12 +6,13 @@ import Footer from '../Footer/Footer';
 import Services from '../Services/Services';
 import Video from '../Video/Video';
 import '../../Assets/Stylesheet/main.css';
-import Carousel from '../Carousel/Carousel';
+// import Carousel from '../Carousel/Carousel';
 import WhiteLogo from '../../Assets/images/whiteLogo.jpg';
-import womenProfile from '../../Assets/images/womenProfile.jpg';
-import menProfile from '../../Assets/images/menProfile.jpg';
+// import womenProfile from '../../Assets/images/womenProfile.jpg';
+// import menProfile from '../../Assets/images/menProfile.jpg';
 import Cortesy from '../Cortesy/Cortesy';
 import Quotation from '../Quotation/Quotation';
+import Complementary from '../Complementary/Complementary';
 
 
 class App extends Component {
@@ -22,11 +23,12 @@ class App extends Component {
         <ModalPpal />
         <Video />
         <Services />
-        <Cortesy />
-        <Quotation />
+        <Complementary />
         <img className="PpalLogo"src={WhiteLogo}/>
         <Benefits />
-        <Carousel  images={[WhiteLogo, womenProfile, menProfile]}/>
+        <Cortesy />
+        <Quotation />
+        {/* <Carousel  images={[WhiteLogo, womenProfile, menProfile]}/> */}
         <Footer />
       </div>
     );

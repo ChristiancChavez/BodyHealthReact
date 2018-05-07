@@ -448,9 +448,8 @@
     text-align: center;
     text-shadow: 2px 2px 5px lightgrey, 2px 2px 5px lightgrey;
     font-size: 60px;
-    padding: 30px 0 30px 0;
-    margin-top: 0px;
-    padding-top: 60px; }
+    padding: 60px 0 30px 0;
+    margin-top: 0px; }
   .quotation .options {
     margin-top: 100px;
     margin-left: 180px;
@@ -522,3 +521,53 @@
         background: orange;
         border: lightgrey solid 6px;
         cursor: pointer; }
+
+.complementary {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  background-color: black; }
+  .complementary__title {
+    font-size: 50px;
+    font-weight: bolder;
+    color: orangered;
+    text-align: center;
+    text-shadow: 2px 2px 5px lightgrey, 2px 2px 5px lightgrey;
+    padding: 70px 0px 70px 0px; }
+  .complementary__nutrition {
+    background-image: url("../../Assets/images/nutrition.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; }
+  .complementary__fisioterapy {
+    background-image: url("../../Assets/images/fisioterapy.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; }
+  .complementary__massage {
+    background-image: url("../../Assets/images/massage.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; }
+  .complementary__valuations {
+    background-image: url("../../Assets/images/valuations.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; }
+  .complementary__subtitle {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%);
+    font-size: 60px;
+    font-weight: bolder;
+    color: black;
+    text-shadow: 3px 3px 8px orangered, 3px 3px 8px orangered;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 2%;
+    padding: 15px;
+    cursor: pointer; }
