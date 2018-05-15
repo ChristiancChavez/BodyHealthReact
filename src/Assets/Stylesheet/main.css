@@ -571,3 +571,105 @@
     border-radius: 2%;
     padding: 15px;
     cursor: pointer; }
+
+.humanTalent {
+  background-image: url("../../Assets/images/talentHumanBackground.jpg");
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .humanTalent__title {
+    font-size: 50px;
+    font-weight: bolder;
+    color: orangered;
+    text-align: center;
+    text-shadow: 2px 2px 5px lightgrey, 2px 2px 5px lightgrey;
+    padding: 70px 0px 70px 0px; }
+  .humanTalent .profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 15px 0 15px 0; }
+    .humanTalent .profile .ppalInfo {
+      display: flex;
+      flex-direction: column;
+      border: solid 3px orangered;
+      border-radius: 12px;
+      margin: 15px;
+      background: rgba(20, 20, 20, 0.322); }
+      .humanTalent .profile .ppalInfo__name {
+        font-weight: bolder;
+        color: white;
+        font-size: 25px;
+        background: black;
+        border-radius: 8px;
+        padding: 10px;
+        border-bottom: solid 3px orangered; }
+      .humanTalent .profile .ppalInfo__photo {
+        width: 220px;
+        height: 250px;
+        padding: 10px;
+        align-self: center; }
+      .humanTalent .profile .ppalInfo .icons {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        border-top: solid 3px orangered;
+        margin-top: 10px;
+        background: rgba(105, 104, 104, 0.623);
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px; }
+        .humanTalent .profile .ppalInfo .icons__icon {
+          width: 40px;
+          height: 50px;
+          padding: 10px;
+          cursor: pointer; }
+    .humanTalent .profile .personalInfo {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      align-items: center;
+      width: 1500px;
+      padding-top: 20px; }
+      .humanTalent .profile .personalInfo .category {
+        background: rgba(105, 104, 104, 0.623);
+        border-radius: 12px;
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        position: relative; }
+        .humanTalent .profile .personalInfo .category__info {
+          font-size: 25px; }
+        .humanTalent .profile .personalInfo .category__phrase {
+          font-size: 30px;
+          font-weight: bolder;
+          color: gold; }
+        .humanTalent .profile .personalInfo .category .subcategory {
+          display: flex;
+          justify-content: center;
+          flex-direction: column; }
+          .humanTalent .profile .personalInfo .category .subcategory__info {
+            font-size: 25px; }
+          .humanTalent .profile .personalInfo .category .subcategory__stars {
+            width: 30px;
+            height: 30px;
+            padding: 5px;
+            cursor: pointer;
+            border-radius: 12px;
+            filter: grayscale(100%); }
+            .humanTalent .profile .personalInfo .category .subcategory__stars:hover {
+              filter: grayscale(0%); }
+          .humanTalent .profile .personalInfo .category .subcategory--column {
+            flex-direction: row; }
+  .humanTalent .submit {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 68%;
+    left: 94%; }
+    .humanTalent .submit:hover {
+      width: 35px;
+      height: 35px; }
+    .humanTalent .submit--invalid {
+      left: 97%; }

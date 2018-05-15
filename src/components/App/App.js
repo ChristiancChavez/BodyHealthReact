@@ -13,6 +13,7 @@ import WhiteLogo from '../../Assets/images/whiteLogo.jpg';
 import Cortesy from '../Cortesy/Cortesy';
 import Quotation from '../Quotation/Quotation';
 import Complementary from '../Complementary/Complementary';
+import HumanTalent from '../HumanTalent/HumanTalent';
 
 
 class App extends Component {
@@ -24,7 +25,8 @@ class App extends Component {
         <Video />
         <Services />
         <Complementary />
-        <img className="PpalLogo"src={WhiteLogo}/>
+        <HumanTalent />
+        <img className="PpalLogo" src={WhiteLogo}/>
         <Benefits />
         <Cortesy />
         <Quotation />
